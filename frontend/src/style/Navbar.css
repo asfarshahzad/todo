@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 180px;
+  background-color:white;
+  color: #177274;
+  border-bottom: 1px solid rgba(0, 0, 0,0.2);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0,0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-style: italic;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+/* ---------- Nav Link Basic Style ---------- */
+.nav-link,
+.active {
+  position: relative;
+  text-decoration: none;
+  color: #177274;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
+}
+
+/* Hover color */
+.nav-link:hover,
+.active:hover {
+  color: #1d8183;
+}
+
+/* ---------- Underline animation ---------- */
+.nav-link::after,
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #177274;
+  transition: width 0.3s ease;
+}
+
+/* Animate underline on hover */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Keep underline for active link */
+.active::after {
+  width: 100%;
+}
+
+/* Smooth transition for underline when changing routes */
+.active {
+  font-weight: 500;
+  color: #177274;
+}

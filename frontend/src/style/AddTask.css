@@ -1,0 +1,91 @@
+.container{
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 auto;
+    padding: 40px 25px 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.task-heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #177274;
+    margin: 0;
+}
+
+.sub-heading{
+    font-weight: 600;
+    margin-top: 15px;
+    color: #177274;
+}
+
+.title-inp{
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #bebbbb;
+}
+
+.title-inp:focus,
+.description:focus{
+    border: 1px solid #177274;
+}
+
+.description{
+    padding: 10px 10px 20px 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #bebbbb;
+}
+
+.add-btn{
+    width: 100%;
+    padding: 10px;
+    background-color: #177274;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.add-btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 8px 10px #1772747c;
+}
+
+.add-btn:active{
+    transform: translateY(1px);
+}
+
+.spinner {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #fff;
+    border-top: 3px solid #1e90ff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.add-btn:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+    opacity: 0.7;
+}

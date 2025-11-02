@@ -1,0 +1,46 @@
+# -----------------------------
+# Node Modules
+# -----------------------------
+# Frontend node_modules
+/frontend/node_modules/
+
+# Backend node_modules
+/backend/node_modules/
+
+# -----------------------------
+# Environment Variables
+# -----------------------------
+# Backend environment file
+/backend/.env
+
+# -----------------------------
+# Build folders
+# -----------------------------
+# Frontend build/dist
+/frontend/build/
+/frontend/dist/
+
+# Backend build/dist (agar koi ho)
+ /backend/build/
+/backend/dist/
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -----------------------------
+# OS generated files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Optional: IDE settings
+# -----------------------------
+.vscode/
+.idea/
